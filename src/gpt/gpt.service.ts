@@ -1,13 +1,15 @@
 import { Injectable } from '@nestjs/common';
+import { orthographyCheckUseCase } from './use-cases';
+import { OrthographyDto } from './dtos';
 
 @Injectable()
 export class GptService {
 
 
-    orthographyCheck(){
+    async orthographyCheck( orthographyDto: OrthographyDto ){
         
-        return {
-          hola: 'mundo'
-        }
+        return await orthographyCheckUseCase({
+          prompt: orthographyDto.prompt,
+        });
     }
 }
