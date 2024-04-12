@@ -14,9 +14,14 @@ Lista de las tecnologías usadas en el proyecto:
 - API
 * OPENIA CHATGPT
 
-## Instalación
+## Instalación en dev
 
 1. Clona este repositorio en tu máquina local:
 
-   ```bash
    git clone https://github.com/Giozar/nestjs-chatgpt-assistant.git
+
+2. Instalar dependencias ```npm install o pnpm install```
+ 
+ 3. Crear archivo .env basado en el .env.template
+
+ 4.Ejecutar ```npm o pnpm run start:dev```
